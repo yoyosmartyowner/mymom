@@ -1,146 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>For My Mom ❤️</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ff70b7">
+<title>Happy Birthday, ESMTalks! 🎂</title>
 <style>
-:root{--pink:#ff5f9e;--rose:#ff86b8;--cream:#fff8fc;--ink:#5d2944}
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{width:100%;height:100%;overflow:hidden}
-body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#fff1f7;color:var(--ink)}
-.screen{position:absolute;inset:0;display:grid;place-items:center;padding:24px;opacity:0;pointer-events:none;transform:scale(1.04);transition:.8s ease;overflow:hidden}
-.screen.active{opacity:1;pointer-events:auto;transform:scale(1)}
-.bg{position:absolute;inset:0;background:
-radial-gradient(circle at 15% 15%,#ffd0e3 0 8%,transparent 28%),
-radial-gradient(circle at 90% 80%,#e5d1ff 0 8%,transparent 30%),
-linear-gradient(135deg,#fff8fc,#ffeaf4)}
-.card{position:relative;z-index:2;width:min(900px,94vw);padding:42px 28px;border:1px solid #fff;border-radius:38px;background:#ffffffb8;box-shadow:0 30px 90px #b94c7a25;backdrop-filter:blur(18px);text-align:center}
-.logo{width:150px;height:150px;margin:0 auto 12px;filter:drop-shadow(0 15px 20px #e657922b)}
-h1{font-size:clamp(42px,8vw,82px);line-height:.95;color:#e74e91;letter-spacing:-3px}
-h2{font-size:clamp(30px,5vw,52px);color:#e74e91;margin-bottom:12px}
-p{font-size:18px;line-height:1.7;color:#7b5366}
-.kicker{font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#d35b8b;font-size:12px;margin-bottom:14px}
-.btn{border:0;border-radius:999px;padding:16px 28px;margin-top:25px;background:linear-gradient(135deg,#ff6ca5,#d94784);color:#fff;font-weight:800;font-size:17px;cursor:pointer;box-shadow:0 12px 28px #dc4d882f;transition:.25s}
-.btn:hover{transform:translateY(-3px) scale(1.02)}
-.choices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
-.choice{border:1px solid #fff;background:#fff9fcdd;border-radius:25px;padding:25px 16px;cursor:pointer;transition:.3s;box-shadow:0 12px 30px #d45a8620}
-.choice:hover{transform:translateY(-7px);box-shadow:0 20px 35px #d45a8630}
-.choice svg{width:55px;height:55px;margin-bottom:12px}
-.choice b{display:block;color:#c8467b;font-size:18px;margin-bottom:5px}
-.answer{min-height:65px;margin-top:22px;font-size:20px;font-weight:700;color:#d34782;animation:pop .45s ease}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:25px 0}
-.frame{height:180px;border-radius:25px;background:linear-gradient(145deg,#fff,#ffe0ed);display:grid;place-items:center;box-shadow:inset 0 0 0 1px #ffffff,0 12px 25px #b84c7520;overflow:hidden}
-.frame svg{width:82%;height:82%}
-.note{background:#fffdfd;border-radius:22px;padding:18px;box-shadow:0 10px 25px #a43c6820;transform:rotate(-1deg);font-style:italic}
-.finalHeart{width:min(280px,65vw);margin:0 auto 10px;animation:pulse 1.7s infinite}
-.float{position:absolute;bottom:-60px;animation:rise linear forwards;opacity:.7;z-index:1}
-.spark{position:absolute;width:7px;height:7px;background:#ff80ad;border-radius:50%;animation:spark 1.4s ease-out forwards;z-index:5}
-.progress{position:absolute;top:18px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:10}
-.dot{width:8px;height:8px;border-radius:50%;background:#efb6cc;transition:.3s}.dot.on{width:25px;border-radius:10px;background:#e95291}
-@keyframes pop{from{opacity:0;transform:translateY(12px) scale(.96)}to{opacity:1;transform:none}}
-@keyframes pulse{50%{transform:scale(1.06)}}
-@keyframes rise{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
-@keyframes spark{to{transform:translate(var(--x),var(--y)) scale(0);opacity:0}}
-@media(max-width:700px){.choices,.gallery{grid-template-columns:1fr}.frame{height:120px}.card{padding:32px 18px}.choice{padding:18px}.logo{width:120px;height:120px}}
+:root{--pink:#ff1493;--purple:#702bff;--yellow:#ffdf00;--blue:#00cfff;--ink:#25103d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:ui-rounded,"Trebuchet MS",system-ui,sans-serif;background:linear-gradient(135deg,#ffb3dc 0%,#c6a8ff 45%,#8cecff 100%);overflow-x:hidden}
+button,a{font:inherit}button{cursor:pointer}
+.blob{position:fixed;width:300px;height:300px;border-radius:50%;filter:blur(55px);opacity:.7;z-index:-1;animation:drift 10s ease-in-out infinite alternate}.b1{background:#ff71bb;top:5%;left:-100px}.b2{background:#7e79ff;right:-100px;top:40%;animation-delay:-3s}.b3{background:#5be4dc;bottom:-100px;left:35%;animation-delay:-6s}
+@keyframes drift{to{transform:translate(70px,-45px) scale(1.2)}}
+nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;padding:20px 14px;position:relative;z-index:2}nav a{padding:10px 16px;border-radius:99px;background:#ffffffed;border:2px solid #ffffff;text-decoration:none;color:#56366d;font-weight:800;box-shadow:0 5px 20px #7652a015;transition:.2s}nav a:hover{transform:translateY(-3px) rotate(-2deg);background:#fff}
+.hero{min-height:84vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:55px 20px 80px;position:relative;perspective:1000px}
+.hero-inner{max-width:850px;animation:rise .9s both}@keyframes rise{from{opacity:0;transform:translateY(30px) rotateX(8deg)}to{opacity:1;transform:none}}
+.pill{display:inline-block;background:#fff;border:2px solid #ff75c4;padding:9px 17px;border-radius:99px;font-weight:900;letter-spacing:.09em;color:#8550a5;box-shadow:0 8px 25px #8854a520}
+h1{font-size:clamp(3.5rem,10vw,7.8rem);line-height:.9;letter-spacing:-.08em;margin:25px 0;color:#47235e;text-shadow:0 5px 0 #fff,0 12px 25px #a65ab52c;transform:rotate(-2deg)}
+h1 span{display:block;background:linear-gradient(90deg,#ff4eaa,#8b54ff,#25bde2);background-clip:text;color:transparent;filter:drop-shadow(0 4px 0 #ffffffb0)}
+.lead{max-width:580px;margin:25px auto;color:#6f5681;font-size:1.12rem;line-height:1.8}
+.btn{border:0;padding:15px 24px;border-radius:17px;color:white;font-weight:900;background:linear-gradient(110deg,#ff59a8,#8d59ff);box-shadow:0 10px 0 #683abf,0 17px 35px #8c4cbb42;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-4px) rotate(-1deg);box-shadow:0 14px 0 #683abf,0 22px 40px #8c4cbb4d}.btn:active{transform:translateY(5px);box-shadow:0 4px 0 #683abf}
+.orbit{position:absolute;font-size:clamp(2rem,5vw,4rem);animation:float 3.5s ease-in-out infinite;filter:drop-shadow(0 8px 5px #7745a522)}.o1{top:14%;left:12%}.o2{top:20%;right:13%;animation-delay:-1s}.o3{bottom:14%;left:17%;animation-delay:-2s}.o4{bottom:17%;right:15%;animation-delay:-.5s}
+@keyframes float{50%{transform:translateY(-18px) rotate(12deg)}}
+section{padding:60px 6%}.heading{text-align:center;font-size:clamp(2rem,5vw,3rem);letter-spacing:-.05em;margin:0 0 12px;color:#4a2860}.sub{text-align:center;color:#7e648d;line-height:1.7;margin:0 auto 32px;max-width:650px}
+.cards{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{padding:27px;border:2px solid #ffffffd9;border-radius:28px;background:#ffffffa8;box-shadow:0 18px 40px #7046a31a;backdrop-filter:blur(12px);transition:transform .25s;transform-style:preserve-3d}
+.card:hover{transform:translateY(-9px) rotateX(3deg) rotateY(-3deg)}.emoji{font-size:2.5rem;filter:drop-shadow(0 7px 5px #8054a52b)}.card h3{margin:12px 0 8px}.card p{margin:0;color:#7e668b;line-height:1.75}
+.letter{max-width:850px;margin:auto;background:#fff4fb;border:3px solid #ff75c4;border-radius:32px;padding:clamp(25px,5vw,48px);box-shadow:0 25px 65px #9d5eb51e;text-align:center;transform:rotate(.5deg)}
+.letter p{color:#715783;line-height:2;font-size:1.08rem}.sign{color:#ff4eaa;font-size:1.3rem;font-weight:900;font-style:italic}
+.memories{max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.memory{min-height:190px;border-radius:26px;border:2px solid #fff;display:grid;place-items:center;text-align:center;padding:20px;box-shadow:0 15px 30px #7046a318;transition:.25s}.memory:hover{transform:scale(1.035) rotate(1deg)}.memory:nth-child(1){background:linear-gradient(145deg,#ff8ac7,#ff4fa8)}.memory:nth-child(2){background:linear-gradient(145deg,#b99aff,#795cff)}.memory:nth-child(3){background:linear-gradient(145deg,#75f2e7,#42d9ff)}.memory strong{display:block;margin-top:10px;color:#241037;text-shadow:0 1px 0 #ffffff75}.memory small{display:block;margin-top:5px;color:#38204e}
+.surprise{text-align:center}.gift{font-size:5rem;display:block;animation:float 3s infinite}.reveal{max-width:700px;margin:30px auto 0;background:#fff4fb;border:3px solid #8b5cff;border-radius:30px;padding:32px;box-shadow:0 20px 55px #9d5eb52b;animation:rise .5s}.reveal h3{font-size:2rem;margin:5px}.reveal p{line-height:1.8;color:#725584}.hide{display:none}
+footer{text-align:center;padding:28px 15px;color:#80658e}
+#flowers{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.flower{position:absolute;top:-45px;user-select:none;opacity:.82;filter:drop-shadow(0 4px 5px #7a32852b);animation:flowerFall linear infinite}
+@keyframes flowerFall{0%{transform:translate3d(0,-5vh,0) rotate(0deg);opacity:0}8%{opacity:.85}50%{transform:translate3d(var(--sway),52vh,0) rotate(180deg)}92%{opacity:.8}100%{transform:translate3d(calc(var(--sway) * -0.6),110vh,0) rotate(380deg);opacity:0}}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:10;overflow:hidden}.piece{position:absolute;top:-30px;width:10px;height:15px;border-radius:3px;animation:fall linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(850deg);opacity:.1}}
+@media(max-width:700px){.cards{grid-template-columns:1fr}.memories{grid-template-columns:1fr}.hero{min-height:75vh}.o1{left:4%}.o2{right:4%}.o3{left:5%}.o4{right:5%}section{padding:45px 5%}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
-
-<div class="progress"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-
-<section class="screen active" id="s1">
-<div class="bg"></div><div class="card">
-<svg class="logo" viewBox="0 0 200 200" aria-label="heart">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff78ad"/><stop offset="1" stop-color="#d83f7e"/></linearGradient></defs>
-<path d="M100 170S25 126 25 68C25 20 84 10 100 55c16-45 75-35 75 13 0 58-75 102-75 102Z" fill="url(#g)"/>
-<path d="M57 57c9-12 22-16 34-10" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".7"/>
-</svg>
-<div class="kicker">A little surprise, made with love</div>
-<h1>Open My Heart ❤️</h1>
-<p style="margin-top:16px">For the woman who makes every ordinary day feel a little more beautiful.</p>
-<button class="btn" onclick="go(2)">Open My Heart ✨</button>
-</div></section>
-
-<section class="screen" id="s2">
-<div class="bg"></div><div class="card">
-<div class="kicker">A few words for you</div><h2>Pick your little love 💗</h2>
-<p>Because Mom deserves the cutest words in the whole world. 🌷</p>
-<div class="choices">
-<div class="choice" onclick="answer(0)"><svg viewBox="0 0 100 100"><path d="M50 84S13 62 13 35C13 13 40 8 50 30 60 8 87 13 87 35c0 27-37 49-37 49Z" fill="#ff679f"/><circle cx="35" cy="40" r="4" fill="#fff"/><circle cx="65" cy="40" r="4" fill="#fff"/></svg><b>My Cutie Mom 🥰</b><span>The cutest mom ever</span></div>
-<div class="choice" onclick="answer(1)"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="34" fill="#ffd06e"/><path d="M50 22v56M22 50h56M30 30l40 40M70 30L30 70" stroke="#fff" stroke-width="7" stroke-linecap="round"/></svg><b>My Favorite Person 🌸</b><span>My number one forever</span></div>
-<div class="choice" onclick="answer(2)"><svg viewBox="0 0 100 100"><path d="M50 83S15 62 15 37C15 16 40 9 50 30c10-21 35-14 35 7 0 25-35 46-35 46Z" fill="#d991ff"/><circle cx="35" cy="47" r="4" fill="#fff"/><circle cx="65" cy="47" r="4" fill="#fff"/></svg><b>My Forever Love ❤️</b><span>Always in my heart</span></div>
-</div>
-<div class="answer" id="answer"></div>
-<button class="btn" onclick="go(3)">Continue to the surprise →</button>
-</div></section>
-
-<section class="screen" id="s3">
-<div class="bg"></div><div class="card">
-<div class="kicker">Wait for it...</div>
-<h2 id="surpriseTitle">A tiny surprise is blooming 🌸</h2>
-<div style="margin:25px auto;width:min(360px,80vw)">
-<svg id="bouquet" viewBox="0 0 360 280">
-<path d="M145 255Q180 170 180 100M215 255Q185 170 180 100" fill="none" stroke="#63a86d" stroke-width="8" stroke-linecap="round"/>
-<path d="M180 255L135 255L225 255Z" fill="#ff91b9"/>
-<g id="flowers">
-<circle cx="180" cy="100" r="0" fill="#ff5f9e"/><circle cx="135" cy="125" r="0" fill="#ff8bb7"/><circle cx="225" cy="125" r="0" fill="#ff73a9"/>
-<circle cx="150" cy="75" r="0" fill="#d891ff"/><circle cx="210" cy="75" r="0" fill="#ffd06e"/>
-</g>
-<circle cx="180" cy="100" r="8" fill="#ffd66d"/>
-</svg>
-</div>
-<p id="surpriseText">Because some people deserve a whole garden of love.</p>
-<button class="btn" onclick="bloom()">Make it bloom 🌷</button>
-<button class="btn" onclick="go(4)" style="background:linear-gradient(135deg,#b56be8,#7e51c7)">One last thing →</button>
-</div></section>
-
-<section class="screen" id="s5">
-<div class="bg"></div><div class="card">
-<svg class="finalHeart" viewBox="0 0 300 250">
-<defs><linearGradient id="fg"><stop stop-color="#ff77ad"/><stop offset="1" stop-color="#c93677"/></linearGradient></defs>
-<path d="M150 225S30 155 30 78C30 22 98 8 150 65 202 8 270 22 270 78c0 77-120 147-120 147Z" fill="url(#fg)"/>
-<path d="M82 70c16-22 37-28 56-18" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".7"/>
-</svg>
-<div class="kicker">From my whole heart</div>
-<h1 style="font-size:clamp(38px,7vw,70px)">I Love You, Mom ❤️</h1>
-<p style="margin-top:18px">Thank you for loving me, believing in me, and being my forever safe place.</p>
-<p style="margin-top:18px;font-weight:800;color:#d44782">You are loved. You are appreciated. You are irreplaceable.</p>
-<button class="btn" onclick="restart()">Read it again ↻</button>
-</div></section>
-
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div id="flowers" aria-hidden="true"></div><div id="confetti"></div>
+<nav><a href="#home">🏠 Home</a><a href="#letter">💌 Birthday Letter</a><a href="#vibes">✨ Good Vibes</a><a href="#surprise">🎁 Surprise</a></nav>
+<header class="hero" id="home">
+ <span class="orbit o1">🎈</span><span class="orbit o2">⭐</span><span class="orbit o3">🧸</span><span class="orbit o4">💖</span>
+ <div class="hero-inner">
+  <div class="pill">🎉 IT'S YOUR SPECIAL DAY 🎉</div>
+  <h1>HAPPY<br><span>BIRTHDAY!</span></h1>
+  <p class="lead">To the one and only <b>ESMTalks</b> — today the world gets a little brighter because it's your day! Get ready for smiles, cake, and unforgettable vibes. 🥳</p>
+  <button class="btn" onclick="party()">LET'S CELEBRATE ✨</button>
+ </div>
+</header>
+<section id="letter">
+ <h2 class="heading">A Little Birthday Love 💌</h2><p class="sub">A message made just for you.</p>
+ <div class="letter">
+  <div style="font-size:2.5rem">💗</div>
+  <p>Dear ESMTalks,<br><br>Happy Birthday, bro! 🎂 I hope this new year of your life brings you endless happiness, amazing opportunities, big wins, and a million reasons to smile. Keep being your awesome self, keep chasing those dreams, and never forget how much your friendship means.<br><br>May every wish you make today bring you one step closer to something incredible. Here's to more laughs, more adventures, and memories we'll talk about for years!</p>
+  <div class="sign">Your friend, with love 💖</div>
+ </div>
+</section>
+<section id="vibes">
+ <h2 class="heading">You're One of a Kind 🌈</h2><p class="sub">Three reasons today — and every day — is worth celebrating you.</p>
+ <div class="cards">
+  <article class="card"><div class="emoji">🌟</div><h3>Your Bright Energy</h3><p>You make ordinary days feel more fun and bring your own kind of sparkle wherever you go.</p></article>
+  <article class="card"><div class="emoji">🤜🤛</div><h3>Real Friendship</h3><p>Good friends are a gift. Thanks for the laughs, the support, and all the little moments.</p></article>
+  <article class="card"><div class="emoji">🚀</div><h3>Your Big Future</h3><p>Keep dreaming big and going after what makes you happy. Your next chapter is going to shine.</p></article>
+ </div>
+</section>
+<section>
+ <h2 class="heading">Good Times & Great Memories 📸</h2><p class="sub">Placeholder memory cards you can personalize with your own photos or inside jokes.</p>
+ <div class="memories">
+  <div class="memory"><div><span style="font-size:3rem">🎮</span><strong>Gaming Legends</strong><small>Every game, a new story</small></div></div>
+  <div class="memory"><div><span style="font-size:3rem">🤣</span><strong>Uncontrollable Laughs</strong><small>The jokes never get old</small></div></div>
+  <div class="memory"><div><span style="font-size:3rem">🌅</span><strong>More Adventures</strong><small>The best is still ahead</small></div></div>
+ </div>
+</section>
+<section class="surprise" id="surprise">
+ <span class="gift">🎁</span><h2 class="heading">One Last Surprise!</h2><p class="sub">There's a birthday wish waiting inside. Ready?</p>
+ <button class="btn" onclick="openGift()">OPEN YOUR SURPRISE 💝</button>
+ <div id="reveal" class="reveal hide"><div style="font-size:3rem">🎂🎊💖</div><h3>YOU'RE A LEGEND, ESMTalks!</h3><p>May your cake be delicious, your days be colorful, your worries be tiny, and your happiness be HUGE. Keep shining, birthday star. You deserve the absolute best!</p><div class="sign">HAPPY BIRTHDAY! 🥳</div></div>
+</section>
+<footer>Made with 💖 especially for ESMTalks · Keep smiling, keep shining!</footer>
 <script>
-let current=1;
-function go(n){
- document.querySelectorAll('.screen').forEach((x,i)=>x.classList.toggle('active',i===n-1));
- document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('on',i===n-1));
- current=n;
- if(n===3)setTimeout(bloom,500);
- if(n===4)burst(28);
-}
-const answers=[
-"Of course! You are my cutest Mom ever. Your smile makes everything better. 🥰💗",
-"No competition! You will always be my favorite person, my safe place, and my biggest blessing. 🌸❤️",
-"No matter how much time passes, you will always have a special piece of my heart. Forever and always, Mom. 🫶💖"
-];
-function answer(i){document.getElementById('answer').textContent=answers[i];burst(12)}
-function bloom(){
- const circles=document.querySelectorAll('#flowers circle');
- circles.forEach((c,i)=>setTimeout(()=>c.setAttribute('r',22),i*130));
- document.getElementById('surpriseTitle').textContent="Look... it bloomed! 🌸";
- burst(22);
-}
-function burst(n){
- for(let i=0;i<n;i++){
-  const e=document.createElement('span');e.className='float';
-  e.textContent=["❤️","💗","🌸","✨","💕"][Math.floor(Math.random()*5)];
-  e.style.left=Math.random()*100+'vw';e.style.fontSize=(16+Math.random()*25)+'px';
-  e.style.animationDuration=(3+Math.random()*4)+'s';document.body.appendChild(e);
-  setTimeout(()=>e.remove(),7500);
+// Soft, continuous falling flowers across the whole page.
+(function startFlowers(){
+ const layer=document.getElementById('flowers');
+ const flowers=['🌸','🌷','🌺','🌼','💮','🌻'];
+ for(let i=0;i<24;i++){
+  const f=document.createElement('span');f.className='flower';
+  f.textContent=flowers[Math.floor(Math.random()*flowers.length)];
+  f.style.left=Math.random()*100+'vw';
+  f.style.fontSize=(16+Math.random()*19)+'px';
+  f.style.animationDuration=(9+Math.random()*13)+'s';
+  f.style.animationDelay=(-Math.random()*22)+'s';
+  f.style.setProperty('--sway',(-70+Math.random()*140)+'px');
+  layer.appendChild(f);
  }
-}
-function restart(){location.reload()}
-setInterval(()=>burst(1),1400);
+})();
+function confetti(n=130){const root=document.getElementById('confetti'),colors=['#ff62b0','#875bff','#ffe66d','#61dcff','#70e1a1','#fff'];for(let i=0;i<n;i++){let e=document.createElement('i');e.className='piece';e.style.left=Math.random()*100+'vw';e.style.background=colors[Math.floor(Math.random()*colors.length)];e.style.animationDuration=(2.5+Math.random()*3)+'s';e.style.animationDelay=(Math.random()*.6)+'s';e.style.transform='rotate('+Math.random()*360+'deg)';root.appendChild(e);setTimeout(()=>e.remove(),6200)}}
+function party(){confetti(180);document.querySelector('.hero').animate([{filter:'hue-rotate(0)'},{filter:'hue-rotate(35deg)'},{filter:'hue-rotate(0)'}],{duration:900})}
+function openGift(){document.getElementById('reveal').classList.remove('hide');confetti(200);document.getElementById('reveal').scrollIntoView({behavior:'smooth',block:'center'})}
 </script>
-</body>
-</html>
+</body></html>
